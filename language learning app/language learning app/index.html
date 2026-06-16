@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Learning App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>📚 Language Learning App</h1>
+
+        <div class="card">
+            <h2>Flashcards</h2>
+            <p id="word">Hello</p>
+            <button onclick="showTranslation()">Show Translation</button>
+            <p id="translation"></p>
+        </div>
+
+        <div class="card">
+            <h2>Quiz</h2>
+            <p>What is the Spanish word for "Thank You"?</p>
+
+            <button onclick="checkAnswer('Gracias')">Gracias</button>
+            <button onclick="checkAnswer('Hola')">Hola</button>
+            <button onclick="checkAnswer('Adios')">Adios</button>
+
+            <p id="result"></p>
+        </div>
+
+        <div class="card">
+            <h2>Progress</h2>
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <p id="progressText">0% Completed</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Fitness Tracker App</h1>
+
+        <div class="form">
+            <input type="number" id="steps" placeholder="Enter Steps">
+            <input type="number" id="calories" placeholder="Calories Burned">
+            <input type="text" id="workout" placeholder="Workout Type">
+            <button onclick="saveData()">Save Activity</button>
+        </div>
+
+        <div class="dashboard">
+            <h2>Daily Summary</h2>
+            <p><strong>Steps:</strong> <span id="displaySteps">0</span></p>
+            <p><strong>Calories:</strong> <span id="displayCalories">0</span></p>
+            <p><strong>Workout:</strong> <span id="displayWorkout">None</span></p>
+
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+
+            <p id="progressText">0% of 10,000 steps goal</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
